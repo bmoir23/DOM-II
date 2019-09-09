@@ -80,6 +80,16 @@ function sizeFunction(){
 }
 // makes background of body blue when resized
 
+// (wheel)
+
+document.querySelector('body > div > header > p ').addEventListener("wheel", myFunction)
+
+function myFunction(){
+    this.style.fontSize = "40px"
+}
+
+// makes text larger when scrolling page
+
 
 
 

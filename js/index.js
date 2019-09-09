@@ -90,7 +90,27 @@ function myFunction(){
 
 // makes text larger when scrolling page
 
+// (load)
 
+window.onload = function(){
+    document.body.style.background = "salmon"
+}
+
+// turns background salmon when page is loaded
+
+// (prevent default/ stop propagation)
+
+const navBlocker = document.querySelector("nav");
+const destinSection = document.querySelector(".content-destination");
+
+navBlocker.addEventListener('click', (event) => {
+    event.preventDefault();})
+// prevent nav links from refreshing page
+
+destinSection.addEventListener('mouseover', (event) => {
+    destinSection.style.display = 'column';
+    event.stopPropagation;
+})
 
 
 
